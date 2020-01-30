@@ -21,3 +21,18 @@ button.addEventListener('click', () => {
     result.textContent = parsedValue + 10;
   }
 });
+
+//console.dir(input);
+//console.log(event);
+
+input.value
+number.innerText
+
+input.addEventListener('keypress', (event) => {
+  const lastValue = input.value.charAt(input.value.length - 1);
+
+  if(Number.isFinite(lastValue) === false) {
+    const newValue = input.value.substring(0, input.value.length -1);
+    input.value = newValue;
+  }
+});
